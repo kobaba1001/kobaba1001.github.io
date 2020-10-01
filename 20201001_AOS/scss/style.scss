@@ -1,0 +1,52 @@
+@charset "utf=8";
+
+//_reset.scssを呼び出す
+@import "_reset.scss";
+//_aos.scssを呼び出す
+@import "_aos.scss";
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(104, 146, 132);
+    margin-bottom: 100px;
+}
+.box{
+    max-width: 800px;
+    height: 120vh;
+    margin: 0 auto 100px;
+    position: relative;
+}
+//フルードイメージにする
+.box img{
+    max-width: 100%;
+}
+
+.txt{
+    width: 40%;
+    padding: 20px;
+    box-shadow: 0 0 10px #ccc;
+    position: absolute;
+    top: -70px;
+    right: -70px;
+    background-color: #fff;
+    
+}
+.box:nth-of-type(2)>.txt{
+    left: -70px;
+}
+
+.thumb-wrapper{
+    max-width: 1200px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.thumb-box{
+    width: calc((100% - 60px) / 4);
+    padding: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+.thumb-img>img{
+    max-width: 100%;
+}
